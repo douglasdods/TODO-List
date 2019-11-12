@@ -1,0 +1,4 @@
+RewriteEngine On # Turn on the rewriting engine
+RewriteRule ^todolist/?$ index.php [NC,L]
+RewriteRule ^todolist/([0-9]+)/?$ index.php?task_id=$1 [NC,L]
+RewriteRule ^todolist/(.*)/?$ index2.php [NC,L]
